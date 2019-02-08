@@ -24,7 +24,7 @@ All Commit Message Format MUST meet this Text Format:
 [<BLANK LINE>]
 [<Message Footer>]
  */
-fun main() {
+fun main(args: Array<String>) {
 
     val commitType = getCommitType()
     val scope = getString("Scope", false).toLowerCase()
@@ -33,7 +33,7 @@ fun main() {
     val messageFooter = getString("Message Footer", false).capitalize()
 
     val finalCommitMessage =
-        "${commitType.emojiCode} ${commitType.type}($scope) $subject\n\n$messageBody\n\n$messageFooter".trim()
+        "${commitType.emojiCode} ${commitType.type}($scope) : $subject\n\n$messageBody\n\n$messageFooter".trim()
 
     val currentDir = System.getProperty("user.dir")
     val command = arrayOf("git", "commit", "-m", finalCommitMessage)
@@ -50,8 +50,6 @@ private fun execute(command: Array<String>, currentDir: String?) {
     command.forEach {
         print("$it ")
     }
-
-    // test
 
     var builder = ProcessBuilder(*command)
     builder = builder.directory(File(currentDir))

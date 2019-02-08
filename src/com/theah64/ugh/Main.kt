@@ -33,7 +33,7 @@ fun main(args: Array<String>) {
     val messageFooter = getString("Message Footer", false).capitalize()
 
     val finalCommitMessage =
-        "${commitType.emojiCode} ${commitType.type}($scope) : $subject\n\n$messageBody\n\n$messageFooter".trim()
+        "${commitType.emojiCode} ${commitType.type}($scope) : $subject\n\n$messageBody\n\n$messageFooter"
 
     val currentDir = System.getProperty("user.dir")
     val command = arrayOf("git", "commit", "-m", finalCommitMessage)

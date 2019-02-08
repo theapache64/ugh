@@ -51,6 +51,8 @@ private fun execute(command: Array<String>, currentDir: String?) {
         print("$it ")
     }
 
+    // test
+
     var builder = ProcessBuilder(*command)
     builder = builder.directory(File(currentDir))
     val p = builder.start()

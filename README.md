@@ -24,5 +24,16 @@ function commit(){
 
 ### Example
 
+##### Before
+
+`commit`
+
+![](before_ugh_commit)
 
 
+`result`
+
+![](before_ugh_commit_result.png)
+
+
+##### After

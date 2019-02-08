@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/ugh/com/theah64/ugh/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ugh/com/theah64/ugh/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/Main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
+              <caret line="35" column="114" selection-start-line="35" selection-start-column="114" selection-end-line="35" selection-end-column="114" />
               <folding>
                 <element signature="e#25#126#0" expanded="true" />
               </folding>
@@ -232,12 +231,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549617840252</updated>
       <workItem from="1549617844992" duration="765000" />
-      <workItem from="1549618621780" duration="12253000" />
+      <workItem from="1549618621780" duration="12317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13018000" />
+    <option name="totallyTimeSpent" value="13082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-11" width="1315" height="780" extended-state="6" />
@@ -258,7 +257,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32868218" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" x="0" y="0" width="278" height="580" id="Documentation" side_tool="true" weight="0.32991317" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -314,7 +313,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
+          <caret line="35" column="114" selection-start-line="35" selection-start-column="114" selection-end-line="35" selection-end-column="114" />
           <folding>
             <element signature="e#25#126#0" expanded="true" />
           </folding>

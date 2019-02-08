@@ -56,7 +56,7 @@ private fun execute(command: Array<String>, currentDir: String?) {
     val p = builder.start()
     val reader = BufferedReader(InputStreamReader(p.inputStream))
     var line = reader.readLine()
-    println("############################")
+    println()
     while (line != null) {
         println(line)
         line = reader.readLine()

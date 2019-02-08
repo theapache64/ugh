@@ -1,5 +1,5 @@
 # ugh
-Commit messages beautified 💖 
+Commit messages beautified 💖 . Inspired from [kazupon/git-commit-message-convention](https://github.com/kazupon/git-commit-message-convention)
 
 ### Usage
 
@@ -28,7 +28,7 @@ function commit(){
 
 `commit`
 
-![](before_ugh_commit)
+![](before_ugh_commit.png)
 
 
 `result`
@@ -37,3 +37,13 @@ function commit(){
 
 
 ##### After
+
+`commit`
+
+![](after_ugh_commit.png)
+
+
+`result`
+
+![](after_ugh_commit_result.png)
+

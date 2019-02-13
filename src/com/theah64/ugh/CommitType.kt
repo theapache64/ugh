@@ -4,21 +4,37 @@ enum class CommitType(
     val emojiCode: String,
     val type: String,
     val description: String,
-    val emoji: String
+    val emoji: String,
+    val keywords: Array<String>? = null
 ) {
-    //star :star: new add new feature
+
+    // QUICK COMMIT TYPES
+    BACKUP(
+        ":arrow_backward:",
+        "backup",
+        "Backup source code",
+        "◀️",
+        arrayOf("backup")
+    ),
+
+
+    // STANDARD COMMIT TYPES
     NEW(
         ":star:",
         "new",
         "Add new feature",
-        "🌟"
+        "🌟",
+        arrayOf("added")
     ),
+
     BUG(
         ":bug:",
         "bug",
         "Fix bug issue",
-        "🐛"
+        "🐛",
+        arrayOf("fixed")
     ),
+
     CRITICAL_BUG(
         ":ambulance:",
         "critical-bug",
@@ -232,6 +248,14 @@ enum class CommitType(
 
     override fun toString(): String {
         return "$emoji : $type : $description"
+    }
+
+    init {
+        keywords?.let {
+            it.forEachIndexed { index, keyword ->
+                keywords[index] = keyword.toLowerCase()
+            }
+        }
     }
 
 }

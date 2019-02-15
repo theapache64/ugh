@@ -1,30 +1,31 @@
 # ugh
-Commit messages beautified 💖 . Inspired from [kazupon/git-commit-message-convention](https://github.com/kazupon/git-commit-message-convention)
+Commit messages beautified 💖 
 
-### Usage
+### Installation
 
-Before ugh, my `commit` shortcut looked like this
-
-```
-function commit(){
-    git add -A
-    commitMsg=$(git commit -m "$1")
-    echo "Hey, $commitMsg - THE END"
-}
-```
-
-After ugh, my `commit` shortcut looks like this
+Download [ugh.jar](ugh.jar) and add this shortcut to your `.bashrc` file
 
 ```
-function commit(){
+# Build commit message interactively
+function commit-clean(){
 	git add -A &&
-	java -jar /path/to/ugh.jar
+	java -jar /path/to/ugh.jar clean
 }
+
+# Build commit message quickly
+function commit-quick(){
+	git add -A &&
+	java -jar /path/to/ugh.jar quick "$1"
+}
+
 ```
+
+and from your `git` directory, try those shortcuts.
+
 
 ### Example
 
-##### Before
+##### Normal way
 
 `commit`
 
@@ -36,7 +37,7 @@ function commit(){
 ![](before_ugh_commit_result.png)
 
 
-##### After
+##### Ugh Way
 
 `commit`
 
@@ -94,3 +95,6 @@ function commit(){
 
 ### Author
 theapache64 - theapache64@gmail.com
+
+Inspired from [kazupon/git-commit-message-convention](https://github.com/kazupon/git-commit-message-convention)
+

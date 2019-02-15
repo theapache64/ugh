@@ -21,7 +21,7 @@ enum class CommitType(
 
 
     // STANDARD COMMIT TYPES
-    NEW(
+    NEW(s
         ":star:",
         "new",
         "Add new feature",

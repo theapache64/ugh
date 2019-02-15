@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/theah64/ugh/utils/InputUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/theah64/ugh/utils/StringUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/theah64/ugh/utils/TerminalUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ugh/com/theah64/ugh/CommitType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ugh/com/theah64/ugh/CommitType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ugh/com/theah64/ugh/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ugh/com/theah64/ugh/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" afterDir="false" />
@@ -27,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="95">
+              <first_editor relative-caret-position="555">
                 <caret line="37" selection-start-line="37" selection-end-line="37" />
               </first_editor>
               <second_editor />
@@ -38,29 +41,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="71">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Main.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Main.kt">
+        <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+            <state relative-caret-position="495">
+              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding>
-                <element signature="e#25#126#0" expanded="true" />
+                <element signature="e#25#167#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Standard.kt">
+        <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/InputUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+            <state relative-caret-position="345">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/TerminalUtils.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/StringUtils.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -70,6 +100,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -91,6 +122,7 @@
       <find>&quot;:</find>
       <find>:&quot;,</find>
       <find>◀️</find>
+      <find>getCommitTypeFromMessage</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -114,8 +146,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.txt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" />
+        <option value="$PROJECT_DIR$/src/com/theah64/ugh/StringUtils.kt" />
+        <option value="$PROJECT_DIR$/src/com/theah64/ugh/TerminalUtils.kt" />
+        <option value="$PROJECT_DIR$/src/com/theah64/ugh/InputUtils.kt" />
         <option value="$PROJECT_DIR$/src/com/theah64/ugh/Main.kt" />
+        <option value="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" />
+        <option value="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" />
       </list>
     </option>
   </component>
@@ -125,10 +161,10 @@
     </layout>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
-    <option name="y" value="-4" />
-    <option name="width" value="1313" />
-    <option name="height" value="772" />
+    <option name="x" value="52" />
+    <option name="y" value="-11" />
+    <option name="width" value="1315" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -138,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,7 +231,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,8 +242,12 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.theah64.ugh.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -228,7 +268,7 @@
     <configuration name="com.theah64.ugh.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="ugh" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="quick &quot;patch new files&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="quick &quot;released new files&quot;" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -255,23 +295,26 @@
       <workItem from="1549618621780" duration="13993000" />
       <workItem from="1549862138993" duration="1189000" />
       <workItem from="1549901433139" duration="88000" />
-      <workItem from="1550073832550" duration="3812000" />
+      <workItem from="1550073832550" duration="3971000" />
+      <workItem from="1550156368164" duration="649000" />
+      <workItem from="1550223461720" duration="2557000" />
+      <workItem from="1550229473406" duration="376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19847000" />
+    <option name="totallyTimeSpent" value="23588000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="-4" width="1313" height="772" extended-state="6" />
+    <frame x="52" y="-11" width="1315" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25335437" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2573007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.41395348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39876354" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -348,7 +391,7 @@
     </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Standard.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="1005">
           <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
         </state>
       </provider>
@@ -356,26 +399,54 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
+          <first_editor relative-caret-position="555">
             <caret line="37" selection-start-line="37" selection-end-line="37" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/InputUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/TerminalUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="71">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+        <state relative-caret-position="315">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/StringUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding>
-            <element signature="e#25#126#0" expanded="true" />
+            <element signature="e#25#167#0" expanded="true" />
           </folding>
         </state>
       </provider>

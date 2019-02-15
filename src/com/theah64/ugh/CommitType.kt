@@ -1,5 +1,7 @@
 package com.theah64.ugh
 
+import java.util.*
+
 enum class CommitType(
     val emojiCode: String,
     val type: String,
@@ -39,7 +41,8 @@ enum class CommitType(
         ":ambulance:",
         "critical-bug",
         "Critical hotfix bug issue",
-        "🚑"
+        "🚑",
+        arrayOf("bug", "critical bug")
     ),
     SECURITY(
         ":lock:",
@@ -231,13 +234,15 @@ enum class CommitType(
         ":heavy_plus_sign:",
         "add",
         "Add files, dependencies, ...",
-        "➕"
+        "➕",
+        arrayOf("added")
     ),
     REMOVE(
         ":heavy_minus_sign:",
         "remove",
         "Remove files, dependencies, ...",
-        "➖"
+        "➖",
+        arrayOf("removed")
     ),
     ENABLE(
         ":on:",
@@ -255,6 +260,72 @@ enum class CommitType(
             it.forEachIndexed { index, keyword ->
                 keywords[index] = keyword.toLowerCase()
             }
+        }
+    }
+
+    companion object {
+        /**
+         * Returns valid commit type
+         */
+        fun getCommitType(scanner: Scanner): CommitType {
+
+
+            print("Type: ")
+            val inputType = scanner.nextLine()
+
+            // Printing all type if it's a ?
+            while (inputType.equals("?")) {
+                CommitType.values().forEach { commitType ->
+                    println(commitType.toString())
+                }
+
+                return getCommitType(scanner)
+            }
+
+            // Checking if it's a valid type
+            val commitTypes = CommitType.values().filter {
+                inputType == it
+                    .type
+            }
+
+            while (commitTypes.isEmpty()) {
+                println("Invalid commit type `$inputType`")
+                return getCommitType(scanner)
+            }
+
+            val finalCommitType = commitTypes.first()
+
+            println(finalCommitType.toString())
+
+            return finalCommitType
+        }
+
+
+        fun getCommitTypeFromMessage(message: String): CommitType {
+
+            val msg = message.toLowerCase()
+            val words = message.split(" ")
+            val fWord = words[0].toLowerCase()
+
+            // looping through all commit types
+            for (commitType in CommitType.values()) {
+
+                // looping through keywords
+                commitType.keywords?.let { keywords ->
+                    for (keyword in keywords) {
+                        if (msg.startsWith(keyword)) {
+                            return commitType
+                        }
+                    }
+                }
+
+                // couldn't get anything from keyword,no go for description
+                if (commitType.description.toLowerCase().contains(fWord)) {
+                    return commitType
+                }
+            }
+
+            return CommitType.UPDATE
         }
     }
 

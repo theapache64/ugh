@@ -39,6 +39,7 @@ fun main(args: Array<String>) {
             val message = args[1]
              Ugh.doQuickCommit(message)
 
+
         }
 
         else -> {

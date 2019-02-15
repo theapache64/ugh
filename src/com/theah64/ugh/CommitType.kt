@@ -21,7 +21,7 @@ enum class CommitType(
 
 
     // STANDARD COMMIT TYPES
-    NEW(s
+    NEW(
         ":star:",
         "new",
         "Add new feature",
@@ -249,6 +249,13 @@ enum class CommitType(
         "enable",
         "Enable feature and something ...",
         "🔛"
+    ),
+    README(
+        ":book:",
+        "readme",
+        "Update README",
+        "📖",
+        arrayOf("updated readme")
     );
 
     override fun toString(): String {

@@ -37,7 +37,8 @@ fun main(args: Array<String>) {
 
             require(args.size > 1) { "commit message missing" }
             val message = args[1]
-            Ugh.doQuickCommit(message)
+             Ugh.doQuickCommit(message)
+
         }
 
         else -> {

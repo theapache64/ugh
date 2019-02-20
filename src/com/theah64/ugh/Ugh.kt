@@ -31,7 +31,7 @@ object Ugh {
     fun doQuickCommit(message: String) {
         val emoji = CommitType.getCommitTypeFromMessage(message)
         println("Commit type identified : $emoji")
-        val commitMessage = "${emoji.emojiCode} $message"
+        val commitMessage = "${emoji.emoji} $message"
         val commitCommand = StringUtils.getCommitCommand(commitMessage)
         TerminalUtils.execute(commitCommand)
     }

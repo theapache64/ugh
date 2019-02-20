@@ -18,7 +18,7 @@ object Ugh {
         val messageFooter = inputUtils.getString("Message Footer", false).capitalize()
 
         val finalCommitMessage =
-            "${commitType.emojiCode} ${commitType.type}($scope) : $subject\n\n$messageBody\n\n$messageFooter\n".trim()
+            "${commitType.emoji} ${commitType.type}($scope) : $subject\n\n$messageBody\n\n$messageFooter\n".trim()
 
         val command = StringUtils.getCommitCommand(finalCommitMessage)
 

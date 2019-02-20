@@ -6,6 +6,10 @@ import com.theah64.ugh.utils.TerminalUtils
 import java.util.*
 
 object Ugh {
+
+    /**
+     * Very interactive
+     */
     fun doCleanCommit() {
 
         val scanner = Scanner(System.`in`)
@@ -23,8 +27,6 @@ object Ugh {
         val command = StringUtils.getCommitCommand(finalCommitMessage)
 
         TerminalUtils.execute(command)
-
-
     }
 
     /**

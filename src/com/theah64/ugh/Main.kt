@@ -41,7 +41,7 @@ fun main(args: Array<String>) {
         }
 
         else -> {
-            println("ERROR : Undefined commit quality $commitQuality")
+            println("ERROR : Undefined commit quality `$commitQuality`")
         }
     }
 

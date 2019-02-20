@@ -27,7 +27,9 @@ object Ugh {
 
     }
 
-
+    /**
+     * Non-interactive
+     */
     fun doQuickCommit(message: String) {
         val emoji = CommitType.getCommitTypeFromMessage(message)
         println("Commit type identified : $emoji")

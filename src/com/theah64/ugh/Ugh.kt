@@ -23,6 +23,7 @@ object Ugh {
         val command = StringUtils.getCommitCommand(finalCommitMessage)
 
         TerminalUtils.execute(command)
+
     }
 
 

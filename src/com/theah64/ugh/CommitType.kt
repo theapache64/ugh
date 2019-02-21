@@ -7,7 +7,7 @@ enum class CommitType(
     val type: String,
     val description: String,
     val emoji: String,
-    val keywords: Array<String>? = null
+    val keywords: Array<String> = arrayOf()
 ) {
 
     // QUICK COMMIT TYPES

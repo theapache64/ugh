@@ -4,6 +4,7 @@ import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.theah64.ugh.CommitType
+import com.theah64.ugh.Ugh
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
@@ -13,8 +14,22 @@ object CommitTypeUtils {
 
     private val commitTypes: List<CommitType> by lazy {
 
+        // jar path
+        val currentPath = File(
+            Ugh::class.java!!.protectionDomain.codeSource.location
+                .toURI()
+        ).parentFile.path
+
+        val dicFileName = "dictionary.json"
+        var dicFile = File("$currentPath/$dicFileName")
+        if (!dicFile.exists()) {
+            // current path
+            dicFile = File(dicFileName)
+        }
+
+
         // Reading json file
-        val reader = BufferedReader(FileReader(File("dictionary.json")))
+        val reader = BufferedReader(FileReader(dicFile))
         val jsonStringBuilder = StringBuffer()
 
         var line = reader.readLine()
@@ -22,6 +37,8 @@ object CommitTypeUtils {
             jsonStringBuilder.append(line)
             line = reader.readLine()
         } while (line != null)
+
+        reader.close()
 
 
         // Converting to list

@@ -1,5 +1,13 @@
 [
   {
+    "type": "first-commit",
+    "description": "First commit",
+    "emoji": "🌛",
+    "keywords": [
+      "first commit"
+    ]
+  },
+  {
     "type": "backup",
     "description": "Backup source code",
     "emoji": "◀️",

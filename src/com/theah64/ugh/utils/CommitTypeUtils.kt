@@ -24,6 +24,7 @@ object CommitTypeUtils {
         } while (line != null)
 
 
+
         // Converting to list
         val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
         val type = Types.newParameterizedType(List::class.java, CommitType::class.java)

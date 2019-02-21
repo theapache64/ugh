@@ -1,7 +1,5 @@
 package com.theah64.ugh
 
-import java.util.*
-
 class CommitType(
     val type: String,
     val description: String,

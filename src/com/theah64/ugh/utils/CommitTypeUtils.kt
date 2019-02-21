@@ -11,7 +11,7 @@ import java.util.*
 
 object CommitTypeUtils {
 
-    val commitTypes: List<CommitType> by lazy {
+    private val commitTypes: List<CommitType> by lazy {
 
         // Reading json file
         val reader = BufferedReader(FileReader(File("dictionary.json")))
@@ -22,7 +22,6 @@ object CommitTypeUtils {
             jsonStringBuilder.append(line)
             line = reader.readLine()
         } while (line != null)
-
 
 
         // Converting to list

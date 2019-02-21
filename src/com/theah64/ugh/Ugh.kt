@@ -1,5 +1,6 @@
 package com.theah64.ugh
 
+import com.theah64.ugh.utils.CommitTypeUtils
 import com.theah64.ugh.utils.InputUtils
 import com.theah64.ugh.utils.StringUtils
 import com.theah64.ugh.utils.TerminalUtils
@@ -15,7 +16,7 @@ object Ugh {
         val scanner = Scanner(System.`in`)
 
         val inputUtils = InputUtils.getInstance(scanner)
-        val commitType = CommitType.getCommitType(scanner)
+        val commitType = CommitTypeUtils.getCommitType(scanner)
         val scope = inputUtils.getString("Scope", true).toLowerCase()
         val subject = inputUtils.getString("Subject", true).capitalize()
         val messageBody = inputUtils.getString("Message Body", false).capitalize()
@@ -33,7 +34,7 @@ object Ugh {
      * Non-interactive
      */
     fun doQuickCommit(message: String) {
-        val emoji = CommitType.getCommitTypeFromMessage(message)
+        val emoji = CommitTypeUtils.getCommitTypeFromMessage(message)
         println("Commit type identified : $emoji")
         val commitMessage = "${emoji.emoji} $message"
         val commitCommand = StringUtils.getCommitCommand(commitMessage)

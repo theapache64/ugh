@@ -3,7 +3,7 @@ Commit messages beautified 💖
 
 ### Installation
 
-Download [ugh.jar](ugh.jar) and add this shortcut to your `.bashrc` file
+Download [ugh.jar](ugh.jar) and [dictionary.json](dictionary.json) into one directory. Then, add this shortcut to your `.bashrc` file
 
 ```
 # Build commit message interactively

@@ -1,6 +1,5 @@
 [
   {
-    "emojiCode": ":arrow_backward:",
     "type": "backup",
     "description": "Backup source code",
     "emoji": "◀️",
@@ -9,7 +8,6 @@
     ]
   },
   {
-    "emojiCode": ":star:",
     "type": "new",
     "description": "Add new feature",
     "emoji": "🌟",
@@ -18,7 +16,6 @@
     ]
   },
   {
-    "emojiCode": ":bug:",
     "type": "bug",
     "description": "Fix bug issue",
     "emoji": "🐛",
@@ -27,7 +24,6 @@
     ]
   },
   {
-    "emojiCode": ":ambulance:",
     "type": "critical-bug",
     "description": "Critical hotfix bug issue",
     "emoji": "🚑",
@@ -37,224 +33,192 @@
     ]
   },
   {
-    "emojiCode": ":lock:",
     "type": "security",
     "description": "Fix security issue",
     "emoji": "🔒",
     "keywords": []
   },
   {
-    "emojiCode": ":chart_with_upwards_trend:",
     "type": "performance",
     "description": "Fix performance issue",
     "emoji": "📈",
     "keywords": []
   },
   {
-    "emojiCode": ":zap:",
     "type": "improvement",
     "description": "Update backwards-compatible feature",
     "emoji": "⚡️",
     "keywords": []
   },
   {
-    "emojiCode": ":boom:",
     "type": "breaking",
     "description": "Update backwards-incompatible feature",
     "emoji": "💥",
     "keywords": []
   },
   {
-    "emojiCode": ":warning:",
     "type": "deprecated",
     "description": "Deprecate feature",
     "emoji": "⚠️",
     "keywords": []
   },
   {
-    "emojiCode": ":globe_with_meridians:",
     "type": "i18n",
     "description": "Update or fix internationalization",
     "emoji": "🌐",
     "keywords": []
   },
   {
-    "emojiCode": ":wheelchair:",
     "type": "a11y",
     "description": "Update or fix accessibility",
     "emoji": "♿️",
     "keywords": []
   },
   {
-    "emojiCode": ":lipstick:",
     "type": "ui-update",
     "description": "Update UI/Cosmetic",
     "emoji": "💄",
     "keywords": []
   },
   {
-    "emojiCode": ":up:",
     "type": "update",
     "description": "Update other",
     "emoji": "🆙",
     "keywords": []
   },
   {
-    "emojiCode": ":rotating_light:",
     "type": "non-code-refactor",
     "description": "Remove linter/strict/deprecation warnings",
     "emoji": "🚨",
     "keywords": []
   },
   {
-    "emojiCode": ":shirt:",
     "type": "code-refactor",
     "description": "Refactoring or code layouting",
     "emoji": "👕",
     "keywords": []
   },
   {
-    "emojiCode": ":white_check_mark:",
     "type": "test-add",
     "description": "Add tests",
     "emoji": "☑️",
     "keywords": []
   },
   {
-    "emojiCode": ":green_heart:",
     "type": "test-fix",
     "description": "Fix tests failure or CI building",
     "emoji": "💚",
     "keywords": []
   },
   {
-    "emojiCode": ":pencil:",
     "type": "docs-update",
     "description": "Update documentation",
     "emoji": "📝",
     "keywords": []
   },
   {
-    "emojiCode": ":copyright:",
     "type": "licence",
     "description": "Decide or change license",
     "emoji": "©",
     "keywords": []
   },
   {
-    "emojiCode": ":lollipop:",
     "type": "example",
     "description": "For example or demo codes",
     "emoji": "🍭",
     "keywords": []
   },
   {
-    "emojiCode": ":arrow_up:",
     "type": "dependency-up",
     "description": "Upgrade dependencies",
     "emoji": "⬆️",
     "keywords": []
   },
   {
-    "emojiCode": ":arrow_down:",
     "type": "dependency-down",
     "description": "Downgrade dependencies",
     "emoji": "⬇️",
     "keywords": []
   },
   {
-    "emojiCode": ":pushpin:",
     "type": "dependency-pin",
     "description": "Pin dependencies",
     "emoji": "📌",
     "keywords": []
   },
   {
-    "emojiCode": ":wrench:",
     "type": "config",
     "description": "Update configuration",
     "emoji": "🔧",
     "keywords": []
   },
   {
-    "emojiCode": ":package:",
     "type": "build",
     "description": "Packaging or bundling or building",
     "emoji": "📦",
     "keywords": []
   },
   {
-    "emojiCode": ":hatching_chick:",
     "type": "release-init",
     "description": "Initial commit",
     "emoji": "🐣",
     "keywords": []
   },
   {
-    "emojiCode": ":confetti_ball:",
     "type": "release-major",
     "description": "Release major version",
     "emoji": "🎊",
     "keywords": []
   },
   {
-    "emojiCode": ":tada:",
     "type": "release-minor",
     "description": "Release minor version",
     "emoji": "🎉",
     "keywords": []
   },
   {
-    "emojiCode": ":sparkles:",
     "type": "release-patch",
     "description": "Release patch version",
     "emoji": "✨",
     "keywords": []
   },
   {
-    "emojiCode": ":rocket:",
     "type": "release-production",
     "description": "Deploy to production enviroment",
     "emoji": "🚀",
     "keywords": []
   },
   {
-    "emojiCode": ":bookmark:",
     "type": "release-bookmark",
     "description": "Tagged with version label",
     "emoji": "🔖",
     "keywords": []
   },
   {
-    "emojiCode": ":back:",
     "type": "revert",
     "description": "Revert commiting",
     "emoji": "🔙",
     "keywords": []
   },
   {
-    "emojiCode": ":construction:",
     "type": "wip",
     "description": "WIP commiting",
     "emoji": "🚧",
     "keywords": []
   },
   {
-    "emojiCode": ":truck:",
     "type": "move",
     "description": "Move or rename files, repository, ...",
     "emoji": "🚚",
     "keywords": []
   },
   {
-    "emojiCode": ":twisted_rightwards_arrows:",
     "type": "merge",
     "description": "Merge conflict resolution",
     "emoji": "🔀",
     "keywords": []
   },
   {
-    "emojiCode": ":heavy_plus_sign:",
     "type": "add",
     "description": "Add files, dependencies, ...",
     "emoji": "➕",
@@ -263,7 +227,6 @@
     ]
   },
   {
-    "emojiCode": ":heavy_minus_sign:",
     "type": "remove",
     "description": "Remove files, dependencies, ...",
     "emoji": "➖",
@@ -272,14 +235,12 @@
     ]
   },
   {
-    "emojiCode": ":on:",
     "type": "enable",
     "description": "Enable feature and something ...",
     "emoji": "🔛",
     "keywords": []
   },
   {
-    "emojiCode": ":book:",
     "type": "readme",
     "description": "Update README",
     "emoji": "📖",

@@ -115,13 +115,14 @@ object CommitTypeUtils {
     }
 
 
-    fun getCommitTypesFromMessage(message: String): List<CommitType> {
+    fun getCommitTypesFromMessage(message: String): MutableSet<CommitType> {
 
-        val list = mutableListOf<CommitType>()
+        val list = mutableSetOf<CommitType>()
         val words = message.split(" ")
         for (x in words) {
             val word = x.toLowerCase()
             for (commitType in commitTypes) {
+
                 if (commitType.description.toLowerCase().contains(word) || word == commitType.type) {
                     list.add(commitType)
                 } else {
@@ -129,7 +130,6 @@ object CommitTypeUtils {
                     for (keyword in commitType.keywords) {
                         if (keyword.contains(word) || word.contains(keyword)) {
                             list.add(commitType)
-                            break
                         }
                     }
                 }

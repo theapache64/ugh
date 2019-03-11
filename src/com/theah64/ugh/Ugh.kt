@@ -66,7 +66,7 @@ object Ugh {
         val inputUtils = InputUtils.getInstance(scanner)
 
         val inputNum = inputUtils.getInt("Enter number", 1, matchingCommitTypes.size)
-        doCommit(matchingCommitTypes[inputNum - 1], message)
+        doCommit(matchingCommitTypes.elementAt(inputNum - 1), message)
     }
 
 }

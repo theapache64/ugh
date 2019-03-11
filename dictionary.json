@@ -3,7 +3,9 @@
     "type": "update",
     "description": "Update other",
     "emoji": "🆙",
-    "keywords": []
+    "keywords": [
+      "update"
+    ]
   },
   {
     "type": "first-commit",

@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/utils/InputUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/utils/InputUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ugh.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ugh.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +24,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="300">
-                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                <caret line="20" selection-start-line="20" selection-end-line="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            <state relative-caret-position="158">
+              <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -86,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#25#212#0" expanded="true" />
               </folding>
@@ -336,12 +330,12 @@
       <workItem from="1550662610069" duration="2444000" />
       <workItem from="1550741007122" duration="1360000" />
       <workItem from="1550749601670" duration="2615000" />
-      <workItem from="1552276603929" duration="3260000" />
+      <workItem from="1552276603929" duration="3321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42579000" />
+    <option name="totallyTimeSpent" value="42640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="-4" width="1313" height="772" extended-state="6" />
@@ -361,7 +355,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.58914727" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.58914727" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32868218" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -475,7 +469,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="300">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <caret line="20" selection-start-line="20" selection-end-line="20" />
           </first_editor>
           <second_editor />
         </state>
@@ -491,7 +485,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#25#212#0" expanded="true" />
           </folding>
@@ -524,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        <state relative-caret-position="158">
+          <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
         </state>
       </provider>
     </entry>

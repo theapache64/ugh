@@ -114,6 +114,7 @@ object CommitTypeUtils {
         return commitTypes[0]
     }
 
+
     fun getCommitTypesFromMessage(message: String): List<CommitType> {
 
         val list = mutableListOf<CommitType>()

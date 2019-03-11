@@ -122,7 +122,7 @@ object CommitTypeUtils {
         for (x in words) {
             val word = x.toLowerCase()
             for (commitType in commitTypes) {
-                if (commitType.description.toLowerCase().contains(word)) {
+                if (commitType.description.toLowerCase().contains(word) || word == commitType.type) {
                     list.add(commitType)
                 } else {
                     // looping through keywords

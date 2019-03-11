@@ -59,14 +59,14 @@ object Ugh {
 
         println("Please confirm commit type")
         for (type in matchingCommitTypes.withIndex()) {
-            println("${type.index + 1} . ${type.value}")
+            println("${type.index + 1}) ${type.value}")
         }
 
         val scanner = Scanner(System.`in`)
         val inputUtils = InputUtils.getInstance(scanner)
 
         val inputNum = inputUtils.getInt("Enter number", 1, matchingCommitTypes.size)
-        doCommit(matchingCommitTypes.get(inputNum - 1), message)
+        doCommit(matchingCommitTypes[inputNum - 1], message)
     }
 
 }

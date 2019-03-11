@@ -59,7 +59,7 @@ object CommitTypeUtils {
         val inputType = scanner.nextLine()
 
         // Printing all type if it's a ?
-        while (inputType.equals("?")) {
+        while (inputType == "?") {
 
             commitTypes.forEach { commitType ->
                 println(commitType.toString())
@@ -112,5 +112,29 @@ object CommitTypeUtils {
         }
 
         return commitTypes[0]
+    }
+
+    fun getCommitTypesFromMessage(message: String): List<CommitType> {
+
+        val list = mutableListOf<CommitType>()
+        val words = message.split(" ")
+        for (x in words) {
+            val word = x.toLowerCase()
+            for (commitType in commitTypes) {
+                if (commitType.description.toLowerCase().contains(word)) {
+                    list.add(commitType)
+                } else {
+                    // looping through keywords
+                    for (keyword in commitType.keywords) {
+                        if (keyword.contains(word) || word.contains(keyword)) {
+                            list.add(commitType)
+                            break
+                        }
+                    }
+                }
+            }
+        }
+
+        return list
     }
 }

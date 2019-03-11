@@ -12,10 +12,17 @@ function commit-clean(){
 	java -jar /path/to/ugh.jar clean
 }
 
+
 # Build commit message quickly
 function commit-quick(){
 	git add -A &&
 	java -jar /path/to/ugh.jar quick "$1"
+}
+
+# Build commit message quick + less interactive
+function commit-quick-i(){
+	git add -A &&
+	java -jar /path/to/ugh.jar quick-i
 }
 
 ```

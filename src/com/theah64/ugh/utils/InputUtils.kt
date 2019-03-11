@@ -1,5 +1,6 @@
 package com.theah64.ugh.utils
 
+import java.lang.NumberFormatException
 import java.util.*
 
 class InputUtils private constructor(
@@ -17,6 +18,23 @@ class InputUtils private constructor(
             return getString(prompt, isRequired)
         }
         return value
+    }
+
+    fun getInt(prompt: String, lowerBound: Int, upperBound: Int): Int {
+        print("$prompt :")
+
+        val sVal = scanner.nextLine()
+        try {
+            val value = sVal.toInt()
+            if (value < lowerBound || value > upperBound) {
+                println("Input must between $lowerBound and $upperBound")
+                return getInt(prompt, lowerBound, upperBound)
+            }
+            return value
+        } catch (e: NumberFormatException) {
+            println("Invalid input `$sVal`")
+            return getInt(prompt, lowerBound, upperBound)
+        }
     }
 
     companion object {

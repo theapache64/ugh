@@ -12,7 +12,8 @@ class CommitType(
     }
 
     init {
-        keywords?.let {
+        // making all keywords lowercase
+        keywords.let {
             it.forEachIndexed { index, keyword ->
                 keywords[index] = keyword.toLowerCase()
             }

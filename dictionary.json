@@ -1,5 +1,11 @@
 [
   {
+    "type": "update",
+    "description": "Update other",
+    "emoji": "🆙",
+    "keywords": []
+  },
+  {
     "type": "first-commit",
     "description": "First commit",
     "emoji": "🌛",
@@ -28,7 +34,9 @@
     "description": "Fix bug issue",
     "emoji": "🐛",
     "keywords": [
-      "fixed"
+      "fixed",
+      "bug",
+      "bugs"
     ]
   },
   {
@@ -86,12 +94,6 @@
     "type": "ui-update",
     "description": "Update UI/Cosmetic",
     "emoji": "💄",
-    "keywords": []
-  },
-  {
-    "type": "update",
-    "description": "Update other",
-    "emoji": "🆙",
     "keywords": []
   },
   {

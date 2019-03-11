@@ -35,10 +35,38 @@ object Ugh {
      */
     fun doQuickCommit(message: String) {
         val emoji = CommitTypeUtils.getCommitTypeFromMessage(message)
+        doCommit(emoji, message)
+    }
+
+    private fun doCommit(emoji: CommitType, message: String) {
         println("Commit type identified : $emoji")
         val commitMessage = "${emoji.emoji} $message"
         val commitCommand = StringUtils.getCommitCommand(commitMessage)
         TerminalUtils.execute(commitCommand)
+    }
+
+    /**
+     * Less interactive + quick
+     */
+    fun doQuickInteractiveCommit(message: String) {
+
+        val matchingCommitTypes = CommitTypeUtils.getCommitTypesFromMessage(message)
+
+        if (matchingCommitTypes.isEmpty()) {
+            println("No commit type match your message. Please train your dictionary with more keywords")
+            return
+        }
+
+        println("Please confirm commit type")
+        for (type in matchingCommitTypes.withIndex()) {
+            println("${type.index + 1} . ${type.value}")
+        }
+
+        val scanner = Scanner(System.`in`)
+        val inputUtils = InputUtils.getInstance(scanner)
+
+        val inputNum = inputUtils.getInt("Enter number", 1, matchingCommitTypes.size)
+        doCommit(matchingCommitTypes.get(inputNum - 1), message)
     }
 
 }

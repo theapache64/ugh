@@ -8,6 +8,16 @@
     ]
   },
   {
+    "type": "init",
+    "description": "Initialization of a module/screen/component",
+    "emoji": "🌄",
+    "keywords": [
+      "init",
+      "initialize",
+      "initialized"
+    ]
+  },
+  {
     "type": "first-commit",
     "description": "First commit",
     "emoji": "🌛",
@@ -144,7 +154,7 @@
     "type": "dependency-up",
     "description": "Upgrade dependencies",
     "emoji": "⬆️",
-    "keywords": []
+    "keywords": ["deps"]
   },
   {
     "type": "dependency-down",

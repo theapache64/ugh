@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ugh.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ugh.jar" afterDir="false" />
-    </list>
+    <list default="true" id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/dictionary.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -69,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+            <state relative-caret-position="143">
+              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
               <folding>
                 <element signature="e#25#212#0" expanded="true" />
               </folding>
@@ -81,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+            <state relative-caret-position="458">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
         </entry>
@@ -334,12 +329,12 @@
       <workItem from="1550741007122" duration="1360000" />
       <workItem from="1550749601670" duration="2615000" />
       <workItem from="1552276603929" duration="3849000" />
-      <workItem from="1552284923589" duration="689000" />
+      <workItem from="1552284923589" duration="760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43857000" />
+    <option name="totallyTimeSpent" value="43928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1419" y="-4" width="1313" height="772" extended-state="6" />
@@ -351,7 +346,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41395348" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41395348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984496" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -503,27 +498,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding>
-            <element signature="e#25#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dictionary.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        <state relative-caret-position="458">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding>
+            <element signature="e#25#212#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

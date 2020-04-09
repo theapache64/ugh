@@ -136,6 +136,10 @@ object CommitTypeUtils {
             }
         }
 
+        if (list.isEmpty()) {
+            list.add(commitTypes.find { it.type == "backup" }!!)
+        }
+
         return list
     }
 }

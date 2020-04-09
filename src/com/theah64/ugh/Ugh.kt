@@ -52,11 +52,6 @@ object Ugh {
 
         val matchingCommitTypes = CommitTypeUtils.getCommitTypesFromMessage(message)
 
-        if (matchingCommitTypes.isEmpty()) {
-            println("No commit type match your message. Please train your dictionary with more keywords")
-            return
-        }
-
         println("Please confirm commit type")
         for (type in matchingCommitTypes.withIndex()) {
             println("${type.index + 1}) ${type.value}")

@@ -1,3 +1,5 @@
+![](cover.jpeg)
+
 # ugh
 Commit messages beautified 💖 
 

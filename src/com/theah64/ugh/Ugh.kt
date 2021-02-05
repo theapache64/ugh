@@ -52,15 +52,20 @@ object Ugh {
 
         val matchingCommitTypes = CommitTypeUtils.getCommitTypesFromMessage(message)
 
-        println("Please confirm commit type")
-        for (type in matchingCommitTypes.withIndex()) {
-            println("${type.index + 1}) ${type.value}")
+        val inputNum = if (matchingCommitTypes.size > 1) {
+            println("Please confirm commit type")
+            for (type in matchingCommitTypes.withIndex()) {
+                println("${type.index + 1}) ${type.value}")
+            }
+            val scanner = Scanner(System.`in`)
+            val inputUtils = InputUtils.getInstance(scanner)
+
+            inputUtils.getInt("Enter number", 1, matchingCommitTypes.size)
+        } else {
+            println("Commit type identified via preset")
+            // first
+            1
         }
-
-        val scanner = Scanner(System.`in`)
-        val inputUtils = InputUtils.getInstance(scanner)
-
-        val inputNum = inputUtils.getInt("Enter number", 1, matchingCommitTypes.size)
         doCommit(matchingCommitTypes.elementAt(inputNum - 1), message)
     }
 

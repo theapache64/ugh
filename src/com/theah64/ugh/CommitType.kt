@@ -6,6 +6,9 @@ class CommitType(
     val emoji: String,
     val keywords: Array<String> = arrayOf()
 ) {
+    companion object {
+        const val TYPE_README = "readme"
+    }
 
     override fun toString(): String {
         return "$emoji : $type : $description"

@@ -12,6 +12,13 @@ import java.util.*
 
 object CommitTypeUtils {
 
+    /**
+     * Values should be in lowercase
+     */
+    private val messageTypePreset = mapOf(
+        "update readme" to CommitType.TYPE_README
+    )
+
     private val commitTypes: List<CommitType> by lazy {
 
         // jar path
@@ -115,31 +122,40 @@ object CommitTypeUtils {
     }
 
 
-    fun getCommitTypesFromMessage(message: String): MutableSet<CommitType> {
+    fun getCommitTypesFromMessage(message: String): Set<CommitType> {
 
-        val list = mutableSetOf<CommitType>()
-        val words = message.split(" ")
-        for (x in words) {
-            val word = x.toLowerCase()
-            for (commitType in commitTypes) {
+        // Preference for preset messages
+        val key = message.toLowerCase().trim()
+        if (messageTypePreset.containsKey(key)) {
+            val commitType = messageTypePreset[key]
+            return commitTypes.filter { it.type == commitType }.toSet()
+        } else {
+            val list = mutableSetOf<CommitType>()
+            val words = message.split(" ")
+            for (x in words) {
+                val word = x.toLowerCase()
+                for (commitType in commitTypes) {
 
-                if (commitType.description.toLowerCase().contains(word) || word == commitType.type) {
-                    list.add(commitType)
-                } else {
-                    // looping through keywords
-                    for (keyword in commitType.keywords) {
-                        if (keyword.contains(word) || word.contains(keyword)) {
-                            list.add(commitType)
+                    if (commitType.description.toLowerCase().contains(word) || word == commitType.type) {
+                        list.add(commitType)
+                    } else {
+                        // looping through keywords
+                        for (keyword in commitType.keywords) {
+                            if (keyword.contains(word) || word.contains(keyword)) {
+                                list.add(commitType)
+                            }
                         }
                     }
                 }
             }
+
+            if (list.isEmpty()) {
+                list.add(commitTypes.find { it.type == "backup" }!!)
+            }
+
+            return list
         }
 
-        if (list.isEmpty()) {
-            list.add(commitTypes.find { it.type == "backup" }!!)
-        }
 
-        return list
     }
 }

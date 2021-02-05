@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/CommitType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/Ugh.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/theah64/ugh/utils/CommitTypeUtils.kt" afterDir="false" />
     </list>
@@ -46,7 +48,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -54,6 +55,8 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -87,12 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.com.theah64.ugh.MainKt" />
-      </list>
-    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="" />
@@ -114,7 +113,7 @@
       <workItem from="1550749601670" duration="2615000" />
       <workItem from="1552276603929" duration="3849000" />
       <workItem from="1552284923589" duration="760000" />
-      <workItem from="1586457457325" duration="103000" />
+      <workItem from="1586457457325" duration="316000" />
     </task>
     <servers />
   </component>

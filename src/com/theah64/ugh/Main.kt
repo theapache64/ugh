@@ -24,9 +24,7 @@ fun main(args: Array<String>) {
 
     require(args.isNotEmpty()) { "commit quality should be passed" }
 
-    val commitQuality = args[0]
-
-    when (commitQuality) {
+    when (val commitQuality = args[0]) {
 
         COMMIT_QUALITY_CLEAN -> {
             Ugh.doCleanCommit()

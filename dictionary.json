@@ -154,7 +154,7 @@
     "type": "dependency-up",
     "description": "Upgrade dependencies",
     "emoji": "⬆️",
-    "keywords": ["deps"]
+    "keywords": ["deps","bump"]
   },
   {
     "type": "dependency-down",

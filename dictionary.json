@@ -106,7 +106,9 @@
     "type": "ui-update",
     "description": "Update UI/Cosmetic",
     "emoji": "💄",
-    "keywords": []
+    "keywords": [
+      "ui"
+    ]
   },
   {
     "type": "non-code-refactor",

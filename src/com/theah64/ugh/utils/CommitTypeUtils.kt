@@ -5,9 +5,7 @@ import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.theah64.ugh.CommitType
 import com.theah64.ugh.Ugh
-import java.io.BufferedReader
-import java.io.File
-import java.io.FileReader
+import java.io.*
 import java.util.*
 
 object CommitTypeUtils {
@@ -23,7 +21,7 @@ object CommitTypeUtils {
 
         // jar path
         val currentPath = File(
-            Ugh::class.java!!.protectionDomain.codeSource.location
+            Ugh::class.java.protectionDomain.codeSource.location
                 .toURI()
         ).parentFile.path
 
@@ -36,7 +34,7 @@ object CommitTypeUtils {
 
 
         // Reading json file
-        val reader = BufferedReader(FileReader(dicFile))
+        val reader = BufferedReader(InputStreamReader(FileInputStream(dicFile), Charsets.UTF_8))
         val jsonStringBuilder = StringBuffer()
 
         var line = reader.readLine()

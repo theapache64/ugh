@@ -72,13 +72,9 @@
   </component>
   <component name="RunManager">
     <configuration name="com.theah64.ugh.MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="ugh" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="quick-i &quot;Fixed duplicatation bug using set&quot;" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.theah64.ugh.MainKt" />
+      <module name="ugh" />
+      <option name="PROGRAM_PARAMETERS" value="quick-i &quot;Fixed duplicatation bug using set&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />

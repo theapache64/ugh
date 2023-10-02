@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84617ffa-5315-4abd-b2b6-8f85c5fa4f0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

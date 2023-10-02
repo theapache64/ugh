@@ -1,10 +1,15 @@
 package com.theah64.ugh
 
+import com.squareup.moshi.Json
+
 class CommitType(
     val type: String,
     val description: String,
     val emoji: String,
-    val keywords: Array<String> = arrayOf()
+    val keywords: Array<String> = arrayOf(),
+    var points : Int = 0,
+    @Transient
+    var isMatchedWithKeyword : Boolean = false
 ) {
     companion object {
         const val TYPE_README = "readme"

@@ -18,17 +18,21 @@ object CommitTypeUtils {
     private val messageTypePreset = mapOf(
         "update readme" to CommitType.TYPE_README
     )
+    // jar path
+    private val currentPath: String = File(
+        Ugh::class.java!!.protectionDomain.codeSource.location
+            .toURI()
+    ).parentFile.path
+    val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+    val type = Types.newParameterizedType(List::class.java, CommitType::class.java)
+    val adapter = moshi.adapter<List<CommitType>>(type)
+    val dicFileName = "dictionary.json"
+    var dicFile = File("$currentPath/$dicFileName")
 
     private val commitTypes: List<CommitType> by lazy {
 
-        // jar path
-        val currentPath = File(
-            Ugh::class.java!!.protectionDomain.codeSource.location
-                .toURI()
-        ).parentFile.path
 
-        val dicFileName = "dictionary.json"
-        var dicFile = File("$currentPath/$dicFileName")
+
         if (!dicFile.exists()) {
             // current path
             dicFile = File(dicFileName)
@@ -49,9 +53,6 @@ object CommitTypeUtils {
 
 
         // Converting to list
-        val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
-        val type = Types.newParameterizedType(List::class.java, CommitType::class.java)
-        val adapter = moshi.adapter<List<CommitType>>(type)
         adapter.fromJson(jsonStringBuilder.toString())!!
     }
 
@@ -104,7 +105,7 @@ object CommitTypeUtils {
         for (commitType in commitTypes) {
 
             // looping through keywords
-            commitType.keywords?.let { keywords ->
+            commitType.keywords.let { keywords ->
                 for (keyword in keywords) {
                     if (msg.startsWith(keyword)) {
                         return commitType
@@ -112,7 +113,7 @@ object CommitTypeUtils {
                 }
             }
 
-            // couldn't get anything from keyword,no go for description
+            // couldn't get anything from keyword,now go for description
             if (commitType.description.toLowerCase().contains(fWord)) {
                 return commitType
             }
@@ -125,9 +126,9 @@ object CommitTypeUtils {
     fun getCommitTypesFromMessage(message: String): Set<CommitType> {
 
         // Preference for preset messages
-        val key = message.toLowerCase().trim()
-        if (messageTypePreset.containsKey(key)) {
-            val commitType = messageTypePreset[key]
+        val message = message.toLowerCase().trim()
+        if (messageTypePreset.containsKey(message)) {
+            val commitType = messageTypePreset[message]
             return commitTypes.filter { it.type == commitType }.toSet()
         } else {
             val list = mutableSetOf<CommitType>()
@@ -143,6 +144,7 @@ object CommitTypeUtils {
                         for (keyword in commitType.keywords) {
                             if (keyword.contains(word) || word.contains(keyword)) {
                                 list.add(commitType)
+                                commitType.isMatchedWithKeyword = true
                             }
                         }
                     }
@@ -153,9 +155,14 @@ object CommitTypeUtils {
                 list.add(commitTypes.find { it.type == "backup" }!!)
             }
 
-            return list
+            return list.sortedByDescending { it.points }.toSet()
         }
 
 
+    }
+
+    fun updateCommitTypes() {
+        val newJson = adapter.indent("  ").toJson(commitTypes)
+        dicFile.writeText(newJson)
     }
 }

@@ -43,7 +43,11 @@ object Ugh {
         val commitMessage = "${emoji.emoji} $message"
         val commitCommand = StringUtils.getCommitCommand(commitMessage)
         TerminalUtils.execute(commitCommand)
+        emoji.points++
+        CommitTypeUtils.updateCommitTypes()
     }
+
+
 
     /**
      * Less interactive + quick
@@ -55,7 +59,12 @@ object Ugh {
         val inputNum = if (matchingCommitTypes.size > 1) {
             println("Please confirm commit type")
             for (type in matchingCommitTypes.withIndex()) {
-                println("${type.index + 1}) ${type.value}")
+                val commitType = type.value
+                if(commitType.isMatchedWithKeyword){
+                    println("\u001B[32m${type.index + 1}) $commitType \u001B[0m")
+                }else{
+                    println("${type.index + 1}) $commitType (p${if(commitType.points > 0) commitType.points else ""}")
+                }
             }
             val scanner = Scanner(System.`in`)
             val inputUtils = InputUtils.getInstance(scanner)

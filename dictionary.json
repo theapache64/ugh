@@ -5,8 +5,7 @@
     "emoji": "🆙",
     "keywords": [
       "update"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "init",
@@ -16,8 +15,7 @@
       "init",
       "initialize",
       "initialized"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "first-commit",
@@ -25,8 +23,7 @@
     "emoji": "🌛",
     "keywords": [
       "first commit"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "backup",
@@ -35,8 +32,7 @@
     "keywords": [
       "backup",
       "ing"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "new",
@@ -46,8 +42,7 @@
       "add",
       "implement",
       "finish"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "bug",
@@ -57,8 +52,7 @@
       "fixed",
       "bug",
       "bugs"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "critical-bug",
@@ -67,15 +61,13 @@
     "keywords": [
       "bug",
       "critical bug"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "security",
     "description": "Fix security issue",
     "emoji": "🔒",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "performance",
@@ -83,43 +75,37 @@
     "emoji": "📈",
     "keywords": [
       "improve"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "improvement",
     "description": "Update backwards-compatible feature",
     "emoji": "⚡️",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "breaking",
     "description": "Update backwards-incompatible feature",
     "emoji": "💥",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "deprecated",
     "description": "Deprecate feature",
     "emoji": "⚠️",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "i18n",
     "description": "Update or fix internationalization",
     "emoji": "🌐",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "a11y",
     "description": "Update or fix accessibility",
     "emoji": "♿️",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "ui-update",
@@ -127,57 +113,49 @@
     "emoji": "💄",
     "keywords": [
       "ui"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "non-code-refactor",
     "description": "Remove linter/strict/deprecation warnings",
     "emoji": "🚨",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "code-refactor",
     "description": "Refactoring or code layouting",
     "emoji": "👕",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "test-add",
     "description": "Add tests",
     "emoji": "☑️",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "test-fix",
     "description": "Fix tests failure or CI building",
     "emoji": "💚",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "docs-update",
     "description": "Update documentation",
     "emoji": "📝",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "licence",
     "description": "Decide or change license",
     "emoji": "©",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "example",
     "description": "For example or demo codes",
     "emoji": "🍭",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "dependency-up",
@@ -186,99 +164,85 @@
     "keywords": [
       "deps",
       "bump"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "dependency-down",
     "description": "Downgrade dependencies",
     "emoji": "⬇️",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "dependency-pin",
     "description": "Pin dependencies",
     "emoji": "📌",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "config",
     "description": "Update configuration",
     "emoji": "🔧",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "build",
     "description": "Packaging or bundling or building",
     "emoji": "📦",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "release-init",
     "description": "Initial commit",
     "emoji": "🐣",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "release-major",
     "description": "Release major version",
     "emoji": "🎊",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "release-minor",
     "description": "Release minor version",
     "emoji": "🎉",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "release-patch",
     "description": "Release patch version",
     "emoji": "✨",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "release-production",
     "description": "Deploy to production enviroment",
     "emoji": "🚀",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "release-bookmark",
     "description": "Tagged with version label",
     "emoji": "🔖",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "revert",
     "description": "Revert commiting",
     "emoji": "🔙",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "wip",
     "description": "WIP commiting",
     "emoji": "🚧",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "move",
     "description": "Move or rename files, repository, ...",
     "emoji": "🚚",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "merge",
@@ -286,8 +250,7 @@
     "emoji": "🔀",
     "keywords": [
       "conflicts"
-    ],
-    "points": 3
+    ]
   },
   {
     "type": "add",
@@ -295,8 +258,7 @@
     "emoji": "➕",
     "keywords": [
       "added"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "remove",
@@ -304,15 +266,13 @@
     "emoji": "➖",
     "keywords": [
       "removed"
-    ],
-    "points": 0
+    ]
   },
   {
     "type": "enable",
     "description": "Enable feature and something ...",
     "emoji": "🔛",
-    "keywords": [],
-    "points": 0
+    "keywords": []
   },
   {
     "type": "readme",
@@ -320,7 +280,6 @@
     "emoji": "📖",
     "keywords": [
       "updated readme"
-    ],
-    "points": 0
+    ]
   }
 ]

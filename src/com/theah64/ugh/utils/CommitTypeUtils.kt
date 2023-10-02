@@ -18,6 +18,7 @@ object CommitTypeUtils {
     private val messageTypePreset = mapOf(
         "update readme" to CommitType.TYPE_README
     )
+
     // jar path
     private val currentPath: String = File(
         Ugh::class.java!!.protectionDomain.codeSource.location
@@ -30,7 +31,6 @@ object CommitTypeUtils {
     var dicFile = File("$currentPath/$dicFileName")
 
     private val commitTypes: List<CommitType> by lazy {
-
 
 
         if (!dicFile.exists()) {
@@ -155,7 +155,11 @@ object CommitTypeUtils {
                 list.add(commitTypes.find { it.type == "backup" }!!)
             }
 
-            return list.sortedByDescending { it.points }.toSet()
+            return if (currentPath.contains("theapache64") && list.find { it.points > 0 } != null) {
+                list.sortedByDescending { it.points }
+            } else {
+                list.sortedByDescending { it.isMatchedWithKeyword }
+            }.toSet()
         }
 
 

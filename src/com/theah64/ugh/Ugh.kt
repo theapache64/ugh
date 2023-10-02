@@ -60,10 +60,11 @@ object Ugh {
             println("Please confirm commit type")
             for (type in matchingCommitTypes.withIndex()) {
                 val commitType = type.value
+                val pointValue = if (commitType.points > 0) "(${commitType.points})" else ""
                 if(commitType.isMatchedWithKeyword){
-                    println("\u001B[32m${type.index + 1}) $commitType \u001B[0m")
+                    println("\u001B[32m${type.index + 1}) $commitType $pointValue \u001B[0m")
                 }else{
-                    println("${type.index + 1}) $commitType (p${if(commitType.points > 0) commitType.points else ""}")
+                    println("${type.index + 1}) $commitType $pointValue")
                 }
             }
             val scanner = Scanner(System.`in`)

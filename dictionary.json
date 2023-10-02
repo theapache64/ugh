@@ -1,0 +1,326 @@
+[
+  {
+    "type": "update",
+    "description": "Update other",
+    "emoji": "🆙",
+    "keywords": [
+      "update"
+    ],
+    "points": 1
+  },
+  {
+    "type": "init",
+    "description": "Initialization of a module/screen/component",
+    "emoji": "🌄",
+    "keywords": [
+      "init",
+      "initialize",
+      "initialized"
+    ],
+    "points": 0
+  },
+  {
+    "type": "first-commit",
+    "description": "First commit",
+    "emoji": "🌛",
+    "keywords": [
+      "first commit"
+    ],
+    "points": 0
+  },
+  {
+    "type": "backup",
+    "description": "Backup source code",
+    "emoji": "◀️",
+    "keywords": [
+      "backup",
+      "ing"
+    ],
+    "points": 0
+  },
+  {
+    "type": "new",
+    "description": "Add new feature",
+    "emoji": "🌟",
+    "keywords": [
+      "add",
+      "implement",
+      "finish"
+    ],
+    "points": 0
+  },
+  {
+    "type": "bug",
+    "description": "Fix bug issue",
+    "emoji": "🐛",
+    "keywords": [
+      "fixed",
+      "bug",
+      "bugs"
+    ],
+    "points": 0
+  },
+  {
+    "type": "critical-bug",
+    "description": "Critical hotfix bug issue",
+    "emoji": "🚑",
+    "keywords": [
+      "bug",
+      "critical bug"
+    ],
+    "points": 0
+  },
+  {
+    "type": "security",
+    "description": "Fix security issue",
+    "emoji": "🔒",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "performance",
+    "description": "Fix performance issue",
+    "emoji": "📈",
+    "keywords": [
+      "improve"
+    ],
+    "points": 0
+  },
+  {
+    "type": "improvement",
+    "description": "Update backwards-compatible feature",
+    "emoji": "⚡️",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "breaking",
+    "description": "Update backwards-incompatible feature",
+    "emoji": "💥",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "deprecated",
+    "description": "Deprecate feature",
+    "emoji": "⚠️",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "i18n",
+    "description": "Update or fix internationalization",
+    "emoji": "🌐",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "a11y",
+    "description": "Update or fix accessibility",
+    "emoji": "♿️",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "ui-update",
+    "description": "Update UI/Cosmetic",
+    "emoji": "💄",
+    "keywords": [
+      "ui"
+    ],
+    "points": 0
+  },
+  {
+    "type": "non-code-refactor",
+    "description": "Remove linter/strict/deprecation warnings",
+    "emoji": "🚨",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "code-refactor",
+    "description": "Refactoring or code layouting",
+    "emoji": "👕",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "test-add",
+    "description": "Add tests",
+    "emoji": "☑️",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "test-fix",
+    "description": "Fix tests failure or CI building",
+    "emoji": "💚",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "docs-update",
+    "description": "Update documentation",
+    "emoji": "📝",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "licence",
+    "description": "Decide or change license",
+    "emoji": "©",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "example",
+    "description": "For example or demo codes",
+    "emoji": "🍭",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "dependency-up",
+    "description": "Upgrade dependencies",
+    "emoji": "⬆️",
+    "keywords": [
+      "deps",
+      "bump"
+    ],
+    "points": 0
+  },
+  {
+    "type": "dependency-down",
+    "description": "Downgrade dependencies",
+    "emoji": "⬇️",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "dependency-pin",
+    "description": "Pin dependencies",
+    "emoji": "📌",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "config",
+    "description": "Update configuration",
+    "emoji": "🔧",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "build",
+    "description": "Packaging or bundling or building",
+    "emoji": "📦",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "release-init",
+    "description": "Initial commit",
+    "emoji": "🐣",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "release-major",
+    "description": "Release major version",
+    "emoji": "🎊",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "release-minor",
+    "description": "Release minor version",
+    "emoji": "🎉",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "release-patch",
+    "description": "Release patch version",
+    "emoji": "✨",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "release-production",
+    "description": "Deploy to production enviroment",
+    "emoji": "🚀",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "release-bookmark",
+    "description": "Tagged with version label",
+    "emoji": "🔖",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "revert",
+    "description": "Revert commiting",
+    "emoji": "🔙",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "wip",
+    "description": "WIP commiting",
+    "emoji": "🚧",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "move",
+    "description": "Move or rename files, repository, ...",
+    "emoji": "🚚",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "merge",
+    "description": "Merge conflict resolution",
+    "emoji": "🔀",
+    "keywords": [
+      "conflicts"
+    ],
+    "points": 0
+  },
+  {
+    "type": "add",
+    "description": "Add files, dependencies, ...",
+    "emoji": "➕",
+    "keywords": [
+      "added"
+    ],
+    "points": 0
+  },
+  {
+    "type": "remove",
+    "description": "Remove files, dependencies, ...",
+    "emoji": "➖",
+    "keywords": [
+      "removed"
+    ],
+    "points": 0
+  },
+  {
+    "type": "enable",
+    "description": "Enable feature and something ...",
+    "emoji": "🔛",
+    "keywords": [],
+    "points": 0
+  },
+  {
+    "type": "readme",
+    "description": "Update README",
+    "emoji": "📖",
+    "keywords": [
+      "updated readme"
+    ],
+    "points": 0
+  }
+]
